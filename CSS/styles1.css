@@ -1,0 +1,184 @@
+*{
+    margin:0;
+    padding: 0;
+}
+header{
+    display: flex;
+    justify-content: center;
+    font-size: 15vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: orange;
+}
+
+.container1{
+    background-color:black; 
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-bottom: 0;
+
+}
+
+.container1 li{
+    list-style-type: none;
+}
+.container1 a{
+    display: inline-block;
+    height: 10vh;
+    padding: 50 px;
+    margin:0 80px;
+    text-align:center ;
+    text-decoration: none;
+    color:white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 6vh;
+    
+}
+.container1 a:hover{
+    background-color: lightsteelblue;
+}
+.brand img  {
+    height:10vh;
+    width:10vh;
+    padding: 0 8px;
+}
+.brand{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: orange;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+body{
+    background-image: url('back.jpeg');
+}
+
+.container{
+    min-height: 75vh;
+    background-color: rgb(202, 196, 196);
+    color: orange;
+    font-weight: bolder;
+    min-width: 100%;
+    margin-top: 0;
+    padding-top: 0;
+    display: flex;
+    padding: 10px;
+    font-family:'Times New Roman', Times, serif;
+    background-image: url('back.jpeg'); 
+
+}
+.songList{
+    display: flex;
+    flex-direction: column; 
+}
+.songItem{
+    height: 50px;
+    display: flex;
+    justify-content:space-between ;
+    background-color:black;
+    color: orange;
+    width: 75vw;
+    margin: 12px 0;
+    padding: 12px;
+    align-items: center;
+    border-radius: 10px;
+}
+.songItem img{
+    height: 50px;
+}
+.timestamp{
+    margin: 0 23px;
+}
+.timestamp i{
+    cursor: pointer;
+}
+.bottom{
+    position:sticky;
+    height: 15vh;
+    background-color: black;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#myProgressBar{
+    width: 50vw;
+    cursor: pointer;
+}
+.songInfo{
+    position: absolute;
+    left: 0.5em;
+    color: orange;
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.container3{
+    display: flex;
+    background-color: orange;
+    justify-content: center;
+    flex-flow: wrap;
+    min-height: 10vh;
+    color: black;
+    
+}
+
+.it1{
+    display: inline-block;
+    align-self: center;
+    text-align: start;
+    margin:0 50px; 
+}
+.it2{
+    display: inline-block;
+    align-self: center;
+    text-align: end;
+    text-decoration: none;
+    margin:0 50px;
+}
+.it3{
+    display: inline-block;
+    align-self: center;
+    text-align: center;
+    margin:0 50px; 
+    font-family:  Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+.icons{
+    margin: 1vh;
+}
+.icons i{
+    cursor: pointer;
+}
+@media (max-width: 600px) {
+    .bottom {
+      flex-direction: column; /* Change flex direction to column */
+      align-items: center;
+    }
+  
+    #myProgressBar {
+      width: 80vw; /* Adjust the width of the progress bar */
+      margin-top: 10px; /* Add some spacing between progress bar and songInfo */
+    }
+  
+    .songInfo {
+      position: static; /* Remove absolute positioning */
+      margin-top: 10px; /* Add some spacing to separate songInfo from other elements */
+    }
+  }
+  .about{
+    color:white;
+    background-color: rgb(117, 140, 238);
+    font-weight: bolder;
+    font-size: 1.5rem;
+    margin:2vh 0;
+  }
+  .about h2,.about h1,.about h3{
+    font-size: 2rem;
+    color: black;
+    font-weight: bolder;
+  }
